@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>نسخ النص</title>
+</head>
+<body>
+  <button onclick="copyText()">نسخ النص</button>
+  <script>
+    function copyText() {
+      const text = "920009879";
+      navigator.clipboard.writeText(text).then(() => {
+        alert("تم نسخ النص!");
+      }).catch(err => {
+        alert("حدث خطأ أثناء النسخ!");
+      });
+    }
+  </script>
+</body>
+</html>
